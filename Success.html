@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href=".idea/CSS/bootstrap.css">
+<link rel="stylesheet" type="text/css" href=".idea/CSS/Homepage.css">
+<link rel="stylesheet" type="text/css" href=".idea/CSS/result.css">
+<script type="text/javascript" src=".idea/Script/bootstrap.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>购票成功</title>
+</head>
+<body>
+<div id="body">
+    <div>
+        <div id="block">
+            <p id="sign">购票成功，页面将在<span id="time">10</span>秒后跳转<a href="/Homepage.html">首页</a>，请稍等...</p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var sum =10;
+    function load(){
+        for(var i = sum-1;i>=0;i--){
+            changeTime(i);
+        }
+    }
+    function changeTime(i){
+        setTimeout(function(){
+            document.getElementById("time").innerHTML=i;
+            if(i < 1){
+                location.href="/index";
+                //history.back(); 返回上个页面
+            }
+        },(sum-i)*1000);
+    }
+    load();
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href=".idea/CSS/Homepage.css">
+<link href=".idea/CSS/bootstrap.css">
+<script type="text/javascript" src=".idea/Script/bootstrap.min.js"></script>
+<script src=".idea/script/jquery.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>自动售票系统</title>
+</head>
+<body>
+<div id="body">
+    <p id="introduction">欢迎使用自动售票系统</p>
+    <div>
+        <form>
+            <div id="depart" class="election">
+                <p class="tips">请选择出发地:厦门
+                </p>
+            </div>
+            <div id="destination" class="election">
+                <p class="tips">请选择目的地:
+                </p>
+                <select name="destination">
+                    <option value ="volvo">Volvo</option>
+                    <option value ="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div id="data" class="election">
+                <p class="tips">请选择日期:
+                </p>
+                <select name="year" id="year" >
+                    <option value ="volvo">Volvo</option>
+                    <option value ="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="1">Audi</option>
+                    <option value="5">Audi</option>
+                    <option value="7">Audi</option>
+                    <option value ="saab">Saab</option>
+                    <option value="5">Audi</option>
+                </select>
+            </div>
+            <input type="submit" value="查询" id="query"/>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
